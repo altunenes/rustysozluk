@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["fetch_page","fetch_title","fetch_user"]};
