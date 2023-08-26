@@ -44,4 +44,4 @@ cargo doc --open
 
 ### Contributing
 
-Any kind of contribution is welcome! Feel free to open an issue.
+Any kind of contribution is welcome! Feel free to open an issue =)
