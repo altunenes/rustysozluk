@@ -36,6 +36,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 ```
+You can run bellow command to see documentation:
+```bash
+cargo doc --open
+```
+
 
 ### Contributing
 
