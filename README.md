@@ -1,3 +1,5 @@
+[![Rust](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml/badge.svg)](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml)
+
 # RustySozluk
 
 ## Description
