@@ -108,7 +108,6 @@ pub async fn fetch_user(username: &str, limit: usize) -> Result<Vec<String>, Rus
         let user_url = format!("https://eksisozluk1923.com/son-entryleri?nick={}&p={}", username, current_page);
         let client = reqwest::Client::new();
         let response = client.get(&user_url)
-            .header("User-Agent", "your-user-agent-here")
             .header("X-Requested-With", "XMLHttpRequest")
             .send()
             .await
