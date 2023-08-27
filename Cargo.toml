@@ -1,13 +1,13 @@
 [package]
 name = "rustysozluk"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["altunenes <enesaltun2@gmail.com>"]
 description = "Eksi Sozluk API wrapper"
 license = "MIT"
 rust-version = "1.71.0"
 homepage = "https://github.com/altunenes/rustysozluk"
-documentation = "https://docs.rs/rustysozluk/0.1.1/rustysozluk/"
+documentation = "https://docs.rs/rustysozluk/0.1.2/rustysozluk/"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
