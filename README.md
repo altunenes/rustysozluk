@@ -11,6 +11,7 @@
 ## Description
 
 `RustySozluk` is a Rust library for fetching user entries and thread entries from eksisozluk.com.
+With the power of Rust and `tokio` library, it is possible to fetch entries in a thread in a very short time.
 
 ## Features
 
@@ -42,10 +43,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 ```
-You can run bellow command to see documentation:
-```bash
-cargo doc --open
-```
+
 
 
 ### Contributing
