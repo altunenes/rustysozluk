@@ -39,15 +39,18 @@ use rustysozluk::fetch_user;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let entries = fetch_user("morgomir", 4).await?;
+    let username= "morgomir"; // username to fetch //alınacak kullanıcı adı
+    let entry_number = 4; // number of entries to fetch //alınacak girdi sayısı
+    let entries = fetch_user(username, entry_number).await?;
     println!("Extracted {} entries:", entries.len());
     for entry in entries.iter() {
-        println!("{}", entry);
+        println!("Content: {}\nDate: {}\nUsername: {}", entry.content, entry.date, entry.username);
     }
     Ok(())
 }
 ```
 
+If you want to fetch entries in a thread, you can simple use `fetch_thread` function just like `fetch_user` function, no need to change anything.
 
 
 ### Contributing

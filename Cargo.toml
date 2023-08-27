@@ -1,6 +1,6 @@
 [package]
 name = "rustysozluk"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["altunenes <enesaltun2@gmail.com>"]
 description = "Eksi Sozluk API wrapper"
@@ -17,3 +17,4 @@ scraper = "0.17.1"
 serde_json = "1.0.105"
 thiserror = "1.0.47"
 tokio = { version = "1.32.0", features = ["full"] }
+serde = { version = "1.0.188", features = ["derive"] }
