@@ -4,9 +4,10 @@
 [crates.io]: https://crates.io/crates/rustysozluk
 
 
-
-
 # RustySozluk
+
+![Firefly rustysozluk-rust programming, sour, crabs with green lemons 67820](https://github.com/altunenes/rustysozluk/assets/54986652/7f70cad0-1e9c-4ed6-871d-163a485f1294)
+
 
 ## Description
 
