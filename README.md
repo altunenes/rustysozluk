@@ -1,4 +1,9 @@
-[![Rust](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml/badge.svg)](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml)
+[![Rust](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml/badge.svg)](https://github.com/altunenes/rustysozluk/actions/workflows/rust.yml) [![Latest Version]][crates.io] 
+
+[Latest Version]: https://img.shields.io/crates/v/rustysozluk.svg
+[crates.io]: https://crates.io/crates/rustysozluk
+
+
 
 
 # RustySozluk
