@@ -29,7 +29,7 @@ Add `rustysozluk` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustysozluk = "0.1.0"
+rustysozluk = "0.1.2"
 ```
 
 ## Usage
