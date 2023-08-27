@@ -21,7 +21,8 @@ With the power of Rust and `tokio` library, it is possible to fetch entries in a
 - Fetch user entries by username
 - Fetch entries in a particular thread
 - Asynchronous API using Rust's `async/await`
-
+- Export entries to both `JSON` and `CSV` formats
+  
 ## Installation
 
 Add `rustysozluk` to your `Cargo.toml`:
