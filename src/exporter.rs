@@ -26,18 +26,7 @@ use crate::parser::Entry;
 /// * `Ok(())` - If the export was successful.
 /// * `Err(Error)` - If an IO error occurred during export.
 ///
-/// # Examples
-///
-/// ```rust
-/// use crate::parser::Entry;
-///
-/// let entries = vec![
-///     Entry { content: "content1", date: "date1", username: "username1" },
-///     Entry { content: "content2", date: "date2", username: "username2" },
-/// ];
-/// 
-/// export_to_csv(entries, "output.csv");
-/// ```
+
 
 pub fn export_to_csv(entries: Vec<Entry>, file_name: &str) -> Result<(), Error> {
     let file = File::create(file_name)?;
