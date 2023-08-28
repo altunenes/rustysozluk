@@ -2,6 +2,7 @@
 // Bu örnekte, bir kullanıcının sayfasından girdileri nasıl alacağınız gösterilmiştir. Sadece kullanıcı adını girmeniz yeterli.
 
 use rustysozluk::fetch_user;
+use rustysozluk::tokio;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
