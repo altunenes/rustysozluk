@@ -78,6 +78,17 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ```
 
 
+### Important Notes 📝
+
+To properly use the analyzer module, you'll need to have access to two CSV files that serve as lexicons for sentiment analysis. These files are:
+
+- stopwords.csv - Contains a list of Turkish stop words to be filtered out during preprocessing.
+- SWNetTR.csv - Contains the sentiment lexicon based on the aforementioned model.
+
+Both files can be found in the [files](https://github.com/altunenes/rustysozluk/tree/31d181c2241ca67c6bd4a72a5ff2bc65d7f3d395/files) folder of this GitHub repository. Download it and place it in the same directory as your project.
+
+
+
 ### Contributing
 
 Any kind of contribution is welcome! Feel free to open an issue =)
