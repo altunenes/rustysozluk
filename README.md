@@ -13,7 +13,7 @@
 
 ## Description
 
-`RustySozluk` is a Rust library for fetching user entries and thread entries from eksisozluk.com.
+`RustySozluk` is a Rust library for fetching user entries and thread entries from eksisozluk.com and analyzing sentiment of entries.
 With the power of Rust and `tokio` library, it is possible to fetch entries in a thread in a very short time.
 
 ## Features
@@ -22,6 +22,7 @@ With the power of Rust and `tokio` library, it is possible to fetch entries in a
 - Fetch entries in a particular thread
 - Asynchronous API using Rust's `async/await`
 - Export entries to both `JSON` and `CSV` formats
+- Calculate sentiment of entries or get simple frequency of words in entries
   
 ## Installation
 
@@ -29,7 +30,7 @@ Add `rustysozluk` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustysozluk = "0.1.6"
+rustysozluk = "0.1.7"
 ```
 
 ## Usage
@@ -51,6 +52,30 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ```
 
 If you want to fetch entries in a thread, you can simple use `fetch_thread` function just like `fetch_user` function, no need to change anything.
+
+
+
+## Sentiment Analysis 
+
+rustysozluk has "analyzer" module which is used for sentiment analysis. It uses [Sağlam et al., 2019](https://journals.tubitak.gov.tr/cgi/viewcontent.cgi?article=1639&context=elektrik) model to classify entries as positive, negative and give a "Tone" score between -1 and 1. 
+
+here is an example usage:
+
+```rust
+use rustysozluk::tokio;
+use rustysozluk::fetch_title;
+use rustysozluk::analyzer::analyzer::analyze_sentiment; 
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let title = "https://eksisozluk1923.com/rust-programlama-dili--5575227"; 
+    let number_of_entries = 4; 
+    let entries = fetch_title(title, number_of_entries).await?;
+    analyze_sentiment(entries)?;
+    Ok(())
+
+}
+```
 
 
 ### Contributing
