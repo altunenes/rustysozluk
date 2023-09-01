@@ -30,7 +30,7 @@ Add `rustysozluk` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustysozluk = "0.1.7"
+rustysozluk = "0.1.8"
 ```
 
 ## Usage
@@ -88,7 +88,23 @@ To properly use the analyzer module, you'll need to have access to two CSV files
 Both files can be found in the [files](https://github.com/altunenes/rustysozluk/tree/31d181c2241ca67c6bd4a72a5ff2bc65d7f3d395/files) folder of this GitHub repository. Download it and place it in the same directory as your project.
 
 
+## Request Limitation and Rate Limiting ⚠️
+
+When using the `rustysozluk` crate, please be mindful of the number of requests you make to eksisozluk.com. Sending an excessive number of requests in a short period of time can result in your IP address being temporarily banned from accessing the site.
+
+### Recommendations 📋
+
+- Rate Limiting: Implement rate limiting in your code to control the frequency of your requests.
+  
+- Batch Requests: If possible, batch multiple queries together to minimize the number of individual requests.
+  
+- Caching: Store results locally to reduce the need for repeated requests to the same URLs.
+  
+- By adhering to these guidelines, you help to maintain a respectful use of eksisozluk.com's resources and ensure that you can continue to benefit from the features offered by the rustysozluk library without interruption.
+
+
+
 
 ### Contributing
 
-Any kind of contribution is welcome! Feel free to open an issue =)
+Any kind of contribution is welcome! Feel free to open an issue 🙂
