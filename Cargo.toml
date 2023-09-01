@@ -1,6 +1,6 @@
 [package]
 name = "rustysozluk"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2021"
 authors = ["altunenes <enesaltun2@gmail.com>"]
 description = "Eksi Sozluk API wrapper"
