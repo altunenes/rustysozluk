@@ -1,6 +1,6 @@
 //this example shows how to extract entries from a title. Notice you have to provide the full URL.
 //Bu örnekte, bir başlıktan girdileri nasıl alacağınız gösterilmiştir. Tam URL'yi girmeniz gerekmektedir.
-
+use rustysozluk::tokio;
 use rustysozluk::fetch_title;
 
 #[tokio::main]

@@ -35,7 +35,7 @@ rustysozluk = "0.1.5"
 ## Usage
 
 ```rust
-use rustysozluk::fetch_user;
+use rustysozluk::{fetch_user, tokio};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
