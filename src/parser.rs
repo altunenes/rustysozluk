@@ -124,7 +124,7 @@ pub async fn fetch_user(username: &str, limit: usize) -> Result<Vec<Entry>, Rust
     let mut all_entries = Vec::new();
     let mut current_page = 1;
     while all_entries.len() < limit {
-        let user_url = format!("https://eksisozluk1923.com/son-entryleri?nick={}&p={}", username, current_page);
+        let user_url = format!("https://eksisozluk111.com/son-entryleri?nick={}&p={}", username, current_page);
         let client = reqwest::Client::new();
         let response = client.get(&user_url)
             .header("X-Requested-With", "XMLHttpRequest")

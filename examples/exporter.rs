@@ -6,7 +6,7 @@ use rustysozluk::fetch_title;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let entries = fetch_title("https://eksisozluk1923.com/rust-programlama-dili--5575227", 4).await?;
+    let entries = fetch_title("https://eksisozluk111.com/rust-programlama-dili--5575227", 4).await?;
     println!("Extracted {} entries:", entries.len());
     export_to_csv(entries, "entries.csv")?; //export_to_json(entries, "entries.csv")?; if you want to export to json
  

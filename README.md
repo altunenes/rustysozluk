@@ -30,7 +30,7 @@ Add `rustysozluk` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustysozluk = "0.1.8"
+rustysozluk = "0.1.9"
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ use rustysozluk::analyzer::analyzer::analyze_sentiment;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let title = "https://eksisozluk1923.com/rust-programlama-dili--5575227"; 
+    let title = "https://eksisozluk111.com/rust-programlama-dili--5575227"; 
     let number_of_entries = 4; 
     let entries = fetch_title(title, number_of_entries).await?;
     analyze_sentiment(entries)?;
